@@ -46,7 +46,7 @@ def mermaid(code: str, height: int = 500) -> None:
 # ------------------ Streamlit UI Configuration ------------------ #
 
 st.set_page_config(
-    page_title="STRIDE GPT",
+    page_title="RISK ANALYZER GPT",
     page_icon=":shield:",
     layout="wide",
     initial_sidebar_state="expanded",
