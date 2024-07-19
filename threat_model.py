@@ -20,7 +20,7 @@ def json_to_markdown(threat_model, improvement_suggestions):
     
     # Isi baris tabel dengan data model ancaman
     for threat in threat_model:
-        markdown_output += f"| {threat['Jenis ancaman']} | {threat['Skenario']} | {threat['Dampak potensial']} |\n"
+        markdown_output += f"| {threat['Threat Type']} | {threat['Scenario']} | {threat['Potential Impact']} |\n"
     
     markdown_output += "\n\n## Saran peningkatan\n\n"
     for suggestion in improvement_suggestions:
