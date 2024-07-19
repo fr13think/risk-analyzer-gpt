@@ -625,8 +625,8 @@ Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan tab ini untuk melak
 with tab5:
     st.markdown("""
 Kasus uji digunakan untuk memvalidasi keamanan aplikasi dan memastikan bahwa kerentanan potensial diidentifikasi dan 
-ditangani.Tab ini memungkinkan Anda untuk menghasilkan kasus uji menggunakan sintaks Gherkin.Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
-Perilaku dalam teks biasa, menggunakan sintaks sederhana dari pernyataan yang diberikan-kemudian.Ini membantu dalam membuat tes yang jelas dan dapat dieksekusi 
+ditangani. Pada bagian ini memungkinkan Anda untuk menghasilkan kasus uji menggunakan sintaks Gherkin. Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
+Perilaku dalam teks biasa, menggunakan sintaks sederhana dari pernyataan yang diberikan-kemudian. Ini membantu dalam membuat tes yang jelas dan dapat dieksekusi 
 skenario.
 """)
     st.markdown("""---""")
