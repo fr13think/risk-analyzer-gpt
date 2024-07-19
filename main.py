@@ -66,7 +66,7 @@ st.sidebar.header("Cara Penggunaan Risk Analyzer GPT")
 with st.sidebar:
     # Tambahkan bidang input pemilihan model ke bilah samping
     model_provider = st.selectbox(
-        "Pilih penyediaan model pilihan Anda (disarankan Menggunakan Mistral API karena Gratis):",
+        "Pilih penyediaan model pilihan Anda (disarankan menggunakan Mistral API secara Gratis):",
         ["OpenAI API", "Azure OpenAI Service", "Google AI API", "Mistral API"],
         key="model_provider",
         help="Pilih penyedia model yang ingin Anda gunakan.Ini akan menentukan model yang tersedia untuk seleksi.",
@@ -75,7 +75,7 @@ with st.sidebar:
     if model_provider == "OpenAI API":
         st.markdown(
         """
-    1. Masukkan [OpenAI API key](https://platform.openai.com/account/api-keys) dan pilih di bawah ini 🔑
+    1. Masukkan [OpenAI API key](https://platform.openai.com/account/api-keys) akses link tersbut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
@@ -131,7 +131,7 @@ with st.sidebar:
     if model_provider == "Google AI API":
         st.markdown(
         """
-    1. Masukkan [Google AI API Key Anda] (https://makersuite.google.com/app/apikey) dan model di bawah ini🔑
+    1. Masukkan [Google AI API Key Anda] (https://makersuite.google.com/app/apikey) akses link tersbut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
