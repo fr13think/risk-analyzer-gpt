@@ -369,7 +369,7 @@ Memahami kemungkinan kerentanan dan vektor serangan.Gunakan tab ini untuk mengha
     # ------------------ Threat Model Generation ------------------ #
 
     # Buat tombol kirim untuk pemodelan ancaman
-    threat_model_submit_button = st.button(label="Generate Threat Model")
+    threat_model_submit_button = st.button(label="Hasilkan Model Ancaman")
 
     # Jika tombol Model Ancaman Generate diklik dan pengguna telah memberikan deskripsi aplikasi
     if threat_model_submit_button and st.session_state.get('app_input'):
@@ -443,7 +443,7 @@ Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem.
             st.warning("⚠️ Mistral Small tidak andal menghasilkan kode putri duyung yang benar secara sintaksis.Harap gunakan model besar mistral untuk menghasilkan pohon serangan, atau pilih penyedia model yang berbeda. ")
         
         # Buat tombol Kirim untuk Pohon Serangan
-        attack_tree_submit_button = st.button(label="Generate Attack Tree")
+        attack_tree_submit_button = st.button(label="Hasilkan Kerangka Ancaman")
         
         # Jika tombol Generate Attack Tree diklik dan pengguna telah memberikan deskripsi aplikasi
         if attack_tree_submit_button and st.session_state.get('app_input'):
