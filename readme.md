@@ -1,6 +1,6 @@
 ## Risk Analyzer GPT
 
-Risk Analyzer GPT adalah alat pemodelan ancaman bertenaga AI yang memanfaatkan Large Language Model (LLM) untuk menghasilkan model ancaman dan menyerang pohon untuk aplikasi yang diberikan berdasarkan metodologi langkah.Pengguna memberikan detail aplikasi, seperti jenis aplikasi, metode otentikasi, dan apakah aplikasi tersebut menghadap ke internet atau memproses data sensitif.Model kemudian menghasilkan outputnya berdasarkan informasi yang disediakan.
+Risk Analyzer GPT adalah alat pemodelan ancaman bertenaga AI yang memanfaatkan Large Language Model (LLM) untuk menghasilkan model ancaman dan pohon serangan untuk aplikasi yang diberikan berdasarkan metodologi dan langkah. Pengguna memberikan detail aplikasi, seperti jenis aplikasi, metode otentikasi, dan apakah aplikasi tersebut terhubung ke internet atau memproses data sensitif. Model kemudian menghasilkan outputnya berdasarkan informasi yang diberikan.
 
 ## Installation
 
