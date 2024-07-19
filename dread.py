@@ -42,7 +42,7 @@ Bertindaklah sebagai ahli keamanan siber dengan lebih dari 20 tahun pengalaman d
 {threats}
 Saat memberikan penilaian risiko, gunakan format respons JSON dengan kunci tingkat atas "Risk Assessment" dan daftar ancaman, masing-masing dengan sub-kunci berikut:
 - "Threat Type": Sebuah string yang mewakili jenis ancaman (misalnya, "Spoofing").
-- "Scenario": Sebuah string yang menggambarkan skenario ancaman.
+- "Scenario": Sebuah string yang menggambarkan skenario ancaman dan ubah kedalam bahasa Indonesia.
 - "Damage Potential": Sebuah bilangan bulat antara 1 dan 10.
 - "Reproducibility": Sebuah bilangan bulat antara 1 dan 10.
 - "Exploitability": Sebuah bilangan bulat antara 1 dan 10.
