@@ -179,10 +179,10 @@ st.sidebar.header("About")
 
 with st.sidebar:
     st.markdown(
-        "Selamat datang di Risk Analyzer GPT, aplikasi risk analyzer berbasis AI yang dirancang untuk membantu Anda menghasilkan model ancaman menggunakan teknologi AI."
+        "Selamat datang di Risk Analyzer GPT, aplikasi risk analyzer untuk menganalisa kerentanan sebuah website atau aplikasi berbasis AI yang dirancang untuk membantu Anda menghasilkan model ancaman menggunakan teknologi AI."
     )
     st.markdown(
-        "Pemodelan ancaman adalah aktivitas utama dalam siklus pengembangan perangkat lunak, tetapi sering diabaikan atau dijalankan dengan buruk.Risk Analyzer GPT bertujuan untuk membantu tim menghasilkan model ancaman yang lebih komprehensif dengan memanfaatkan (LLM) untuk menghasilkan daftar ancaman, kerangka serangan dan/atau mitigasi kontrol untuk aplikasi berdasarkan detail yang disediakan."
+        "Pemodelan ancaman adalah aktivitas utama dalam siklus pengembangan perangkat lunak, tetapi sering diabaikan atau dijalankan dengan buruk. Risk Analyzer GPT bertujuan untuk membantu tim menghasilkan model ancaman yang lebih komprehensif dengan memanfaatkan Large Language Model (LLM) untuk menghasilkan daftar ancaman, kerangka serangan serta mitigasi kontrol untuk aplikasi berdasarkan seberapa detail arsitektur yang dijelaskan."
     )
     st.markdown("Created by [Yudha Elfransyah](https://id.linkedin.com/in/yudha-elfransyah-b6913737/).")
     st.markdown("<meta name=\"dicoding:email\" content=\"yudhae@gmail.com\">")
@@ -237,7 +237,7 @@ with st.sidebar:
     st.markdown(
         """
     ### **Apakah model ancaman 100% akurat?**
-    Tidak, model ancaman tidak 100% akurat.Stride GPT menggunakan Large Language Models (LLM) GPT untuk menghasilkan outputnya.Model GPT sangat kuat, tetapi kadang -kadang membuat kesalahan dan rentan terhadap '100% ketidakpastian' (menghasilkan konten yang tidak relevan atau tidak akurat).Harap gunakan output hanya sebagai titik awal untuk mengidentifikasi dan mengatasi potensi risiko keamanan dalam aplikasi Anda.
+    Tidak, model ancaman tidak 100% akurat. Risk Analyzer GPT menggunakan Large Language Models (LLM) GPT untuk menghasilkan outputnya.Model GPT sangat kuat, tetapi kadang -kadang membuat kesalahan dan rentan terhadap '100% ketidakpastian' (menghasilkan konten yang tidak relevan atau tidak akurat).Harap gunakan output hanya sebagai titik awal untuk mengidentifikasi dan mengatasi potensi risiko keamanan dalam aplikasi Anda.
     """
     )
     st.markdown(
@@ -254,8 +254,8 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Model ancaman", "Kerangka Serangan", "M
 
 with tab1:
     st.markdown("""
-Model ancaman membantu mengidentifikasi dan mengevaluasi potensi ancaman keamanan terhadap aplikasi / sistem.Ini memberikan pendekatan sistematis untuk 
-Memahami kemungkinan kerentanan dan vektor serangan.Gunakan tab ini untuk menghasilkan model ancaman menggunakan metodologi langkah.
+Model ancaman membantu mengidentifikasi dan mengevaluasi potensi ancaman keamanan terhadap aplikasi / sistem. Model ini memberikan pendekatan sistematis untuk 
+Memahami kemungkinan kerentanan dan vektor serangan. Gunakan model ini untuk menghasilkan model ancaman menggunakan metodologi langkah yang dihasilkan.
 """)
     st.markdown("""---""")
     
@@ -433,7 +433,7 @@ if threat_model_submit_button and not st.session_state.get('app_input'):
 
 with tab2:
     st.markdown("""
-Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem.Mereka mewakili potensi skenario serangan dalam format hierarkis, dengan tujuan akhir penyerang di akar dan berbagai jalur untuk mencapai tujuan itu sebagai cabang.Ini membantu dalam memahami kerentanan sistem dan memprioritaskan upaya mitigasi.
+Model Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem. Model ini mewakili potensi skenario serangan dalam format hierarkis, dengan tujuan akhir penyerang di akar dan berbagai jalur untuk mencapai tujuan itu sebagai cabang. Model ini membantu dalam memahami kerentanan sistem dan memprioritaskan upaya mitigasi.
 """)
     st.markdown("""---""")
     if model_provider == "Google AI API":
@@ -479,7 +479,7 @@ Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem.
                             data=mermaid_code,
                             file_name="export_attack_tree.md",
                             mime="text/plain",
-                            help="Unduh kode putri duyung untuk diagram serangan pohon."
+                            help="Unduh kode Mermaid untuk diagram serangan pohon."
                         )
 
                     with col2:
@@ -506,8 +506,8 @@ Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem.
 
 with tab3:
     st.markdown("""
-Gunakan tab ini untuk menghasilkan mitigasi potensial untuk ancaman yang diidentifikasi dalam model ancaman.Mitigasi adalah kontrol keamanan atau
-Penanggulangan yang dapat membantu mengurangi kemungkinan atau dampak dari ancaman keamanan.Mitigasi yang dihasilkan dapat digunakan untuk meningkatkan
+Gunakan model ini untuk menghasilkan mitigasi potensial untuk ancaman yang diidentifikasi dalam model ancaman. Model mitigasi adalah kontrol keamanan atau
+Penanggulangan yang dapat membantu mengurangi kemungkinan atau dampak dari ancaman keamanan. Model mitigasi yang dihasilkan dapat digunakan untuk meningkatkan
 Postur keamanan aplikasi dan melindungi terhadap potensi serangan.
 """)
     st.markdown("""---""")
@@ -568,7 +568,7 @@ with tab4:
     st.markdown("""
 DREAD adalah metode untuk mengevaluasi dan memprioritaskan risiko yang terkait dengan ancaman keamanan.Ini menilai ancaman berdasarkan ** Damage Potential** Potensi Kerusakan, 
 ** Reproducibility ** seberapa mudah ancaman, ** Exploitability ** seberapa mudah bagi penyerang, ** Affected Users ** seberapa banyak pengguna yang akan terkena dampak, dan ** Discoverability ** seberapa mudah ancaman dapat dideteksi. DREAD membantu dalam menentukan tingkat risiko keseluruhan dan 
-Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan tab ini untuk melakukan penilaian risiko DREAD untuk aplikasi / sistem Anda.
+Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan model ini untuk melakukan penilaian risiko DREAD untuk aplikasi / sistem Anda.
 """)
     st.markdown("""---""")
     
@@ -626,8 +626,8 @@ Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan tab ini untuk melak
 
 with tab5:
     st.markdown("""
-Kasus uji digunakan untuk memvalidasi keamanan aplikasi dan memastikan bahwa kerentanan potensial diidentifikasi dan 
-ditangani. Pada bagian ini memungkinkan Anda untuk menghasilkan kasus uji menggunakan sintaks Gherkin. Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
+Model Kasus uji digunakan untuk memvalidasi keamanan aplikasi dan memastikan bahwa kerentanan potensial diidentifikasi dan 
+ditangani. Pada model ini memungkinkan Anda untuk menghasilkan kasus uji menggunakan sintaks Gherkin. Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
 Perilaku dalam teks biasa, menggunakan sintaks sederhana dari pernyataan yang diberikan-kemudian. Ini membantu dalam membuat tes yang jelas dan dapat dieksekusi 
 skenario.
 """)
