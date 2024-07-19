@@ -326,7 +326,7 @@ Memahami kemungkinan kerentanan dan vektor serangan.Gunakan tab ini untuk mengha
         # Buat bidang input untuk detail tambahan
     with col2:
             app_type = st.selectbox(
-                label="Select the application type",
+                label="Pilihan jenis aplikasi:",
                 options=[
                     "Web application",
                     "Mobile application",
