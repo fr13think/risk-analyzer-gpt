@@ -8,13 +8,13 @@ def create_test_cases_prompt(threats):
     prompt = f"""
 Bertindak sebagai pakar keamanan dunia maya dengan pengalaman lebih dari 20 tahun menggunakan metodologi pemodelan ancaman langkah.
 Tugas Anda adalah menyediakan kasus uji Gherkin untuk ancaman yang diidentifikasi dalam model ancaman.Itu sangat penting
-Respons Anda dirancang untuk mencerminkan detail ancaman.
+Respons Anda dirancang untuk mencerminkan detail ancaman dan ubah respons kedalam bahasa Indoesia.
 
 Di bawah ini adalah daftar ancaman yang diidentifikasi:
 {threats}
 
 Gunakan deskripsi ancaman dalam langkah 'yang diberikan' sehingga kasus uji khusus untuk ancaman yang diidentifikasi.
-Masukkan sintaks Gherkin di dalam triple backticks (`` `) untuk memformat kasus uji dalam penurunan harga. Tambahkan judul untuk setiap test case. Ubahlah hasil respon dari bahasa Inggris kedalam bahasa Indonesia.
+Masukkan sintaks Gherkin di dalam triple backticks (`` `) untuk memformat kasus uji dalam penurunan harga. Tambahkan judul untuk setiap test case.
 Misalnya:
 
     ```gherkin
