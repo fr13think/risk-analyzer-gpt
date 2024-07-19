@@ -39,7 +39,7 @@ def mermaid(code: str, height: int = 500) -> None:
         </pre>
 
         <script type="module">
-            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js';
             mermaid.initialize({{ startOnLoad: true }});
         </script>
         """,
