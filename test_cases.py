@@ -23,7 +23,7 @@ Misalnya:
     Maka pengguna harus dapat mengakses sistem
     ```
 
-Tanggapan Anda (jangan tambahkan teks pengantar, cukup berikan kasus uji gherkin dan ubah kedalam bahasa Indonesia):
+Tanggapan Anda (jangan tambahkan teks pengantar, cukup berikan kasus uji gherkin):
 """
     return prompt
 
