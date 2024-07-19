@@ -14,7 +14,7 @@ Di bawah ini adalah daftar ancaman yang diidentifikasi:
 {threats}
 
 Gunakan deskripsi ancaman dalam langkah 'yang diberikan' sehingga kasus uji khusus untuk ancaman yang diidentifikasi.
-Masukkan sintaks Gherkin di dalam triple backticks (`` `) untuk memformat kasus uji dalam penurunan harga.Tambahkan judul untuk setiap test case.
+Masukkan sintaks Gherkin di dalam triple backticks (`` `) untuk memformat kasus uji dalam penurunan harga. Tambahkan judul untuk setiap test case. Ubahlah hasil respon dari bahasa Inggris kedalam bahasa Indonesia.
 Misalnya:
 
     ```gherkin
