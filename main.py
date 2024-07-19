@@ -4,10 +4,10 @@ import base64
 import streamlit as st
 import streamlit.components.v1 as components
 
-from threat_model import create_threat_model_prompt, get_threat_model, get_threat_model_azure, get_threat_model_google, get_threat_model_mistral, json_to_markdown, get_image_analysis, create_image_analysis_prompt
-from attack_tree import create_attack_tree_prompt, get_attack_tree, get_attack_tree_azure, get_attack_tree_mistral
+from threatmodel import create_threat_model_prompt, get_threat_model, get_threat_model_azure, get_threat_model_google, get_threat_model_mistral, json_to_markdown, get_image_analysis, create_image_analysis_prompt
+from attacktreemodel import create_attack_tree_prompt, get_attack_tree, get_attack_tree_azure, get_attack_tree_mistral
 from mitigationmodel import create_mitigations_prompt, get_mitigations, get_mitigations_azure, get_mitigations_google, get_mitigations_mistral
-from test_cases import create_test_cases_prompt, get_test_cases, get_test_cases_azure, get_test_cases_google, get_test_cases_mistral
+from testcasesmodel import create_test_cases_prompt, get_test_cases, get_test_cases_azure, get_test_cases_google, get_test_cases_mistral
 from dread import create_dread_assessment_prompt, get_dread_assessment, get_dread_assessment_azure, get_dread_assessment_google, get_dread_assessment_mistral, dread_json_to_markdown
 
 html_code = """
@@ -51,7 +51,7 @@ def mermaid(code: str, height: int = 500) -> None:
 
 st.set_page_config(
     page_title="RISK ANALYZER GPT",
-    page_icon=":shield:",
+    page_icon=":globe:",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -184,8 +184,9 @@ with st.sidebar:
     st.markdown(
         "Pemodelan ancaman adalah aktivitas utama dalam siklus pengembangan perangkat lunak, tetapi sering diabaikan atau dijalankan dengan buruk. Risk Analyzer GPT bertujuan untuk membantu tim menghasilkan model ancaman yang lebih komprehensif dengan memanfaatkan Large Language Model (LLM) untuk menghasilkan daftar ancaman, kerangka serangan serta mitigasi kontrol untuk aplikasi berdasarkan seberapa detail arsitektur yang dijelaskan."
     )
-    st.markdown("Created by [Yudha Elfransyah](https://id.linkedin.com/in/yudha-elfransyah-b6913737/).")
     st.markdown("<meta name=\"dicoding:email\" content=\"yudhae@gmail.com\">")
+    st.markdown("""---""")
+    st.markdown("Created by [Yudha Elfransyah](https://id.linkedin.com/in/yudha-elfransyah-b6913737/).")
 
     # Tambahkan tautan "Star on GitHub" ke bilah sisi
     st.sidebar.markdown(
