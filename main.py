@@ -58,7 +58,7 @@ st.set_page_config(
 
 # ------------------ Sidebar ------------------ #
 
-st.sidebar.image("logo.png")
+st.sidebar.image("Logoo.png")
 
 # Tambahkan instruksi tentang cara menggunakan aplikasi ke bilah sisi
 st.sidebar.header("Cara Penggunaan Risk Analyzer GPT")
@@ -200,7 +200,7 @@ with st.sidebar:
         "Di bawah ini adalah contoh deskripsi aplikasi yang dapat Anda gunakan untuk menguji langkah GPT:"
     )
     st.markdown(
-        "> Aplikasi web yang memungkinkan pengguna untuk membuat, menyimpan, dan berbagi catatan pribadi.Aplikasi ini dibangun menggunakan kerangka kerja React Frontend dan backend Node.js dengan database MongoDB.Pengguna dapat mendaftar untuk akun dan masuk menggunakan OAuth2 dengan Google atau Facebook.Catatan dienkripsi saat istirahat dan hanya dapat diakses oleh pengguna yang membuatnya.Aplikasi ini juga mendukung kolaborasi real-time pada catatan dengan pengguna lain."
+        "> Aplikasi web yang memungkinkan pengguna untuk membuat, menyimpan, dan berbagi catatan pribadi. Aplikasi ini dibangun menggunakan kerangka kerja React Frontend dan backend Node.js dengan database MongoDB. Pengguna dapat mendaftar untuk akun dan masuk menggunakan OAuth2 dengan Google atau Facebook. Catatan dienkripsi saat istirahat dan hanya dapat diakses oleh pengguna yang membuatnya. Aplikasi ini juga mendukung kolaborasi real-time pada catatan dengan pengguna lain."
     )
     st.markdown("""---""")
 
@@ -417,7 +417,7 @@ Memahami kemungkinan kerentanan dan vektor serangan.Gunakan tab ini untuk mengha
         st.download_button(
             label="Unduh model ancaman",
             data=markdown_output,
-            file_name="stride_gpt_threat_model.md",
+            file_name="export_threat_model.md",
             mime="text/markdown",
        )
 
@@ -475,7 +475,7 @@ Pohon serangan adalah cara terstruktur untuk menganalisis keamanan suatu sistem.
                         st.download_button(
                             label="Unduh kode diagram",
                             data=mermaid_code,
-                            file_name="attack_tree.md",
+                            file_name="export_attack_tree.md",
                             mime="text/plain",
                             help="Unduh kode putri duyung untuk diagram serangan pohon."
                         )
@@ -555,7 +555,7 @@ Postur keamanan aplikasi dan melindungi terhadap potensi serangan.
             st.download_button(
                 label="Download Mitigations",
                 data=mitigations_markdown,
-                file_name="mitigations.md",
+                file_name="export_mitigations.md",
                 mime="text/markdown",
             )
         else:
@@ -613,7 +613,7 @@ Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan tab ini untuk melak
             st.download_button(
                 label="Unduh Penilaian Risiko Dread",
                 data=dread_assessment_markdown,
-                file_name="dread_assessment.md",
+                file_name="export_dread_assessment.md",
                 mime="text/markdown",
             )
         else:
@@ -676,7 +676,7 @@ skenario.
             st.download_button(
                 label="Download Test Cases",
                 data=test_cases_markdown,
-                file_name="test_cases.md",
+                file_name="export_test_case.md",
                 mime="text/markdown",
             )
         else:
