@@ -66,7 +66,7 @@ st.sidebar.header("Cara Penggunaan Risk Analyzer GPT")
 with st.sidebar:
     # Tambahkan bidang input pemilihan model ke bilah samping
     model_provider = st.selectbox(
-        "Pilih penyediaan model pilihan Anda:",
+        "Pilih penyediaan model pilihan Anda (disarankan Menggunakan Mistral API karena Gratis):",
         ["OpenAI API", "Azure OpenAI Service", "Google AI API", "Mistral API"],
         key="model_provider",
         help="Pilih penyedia model yang ingin Anda gunakan.Ini akan menentukan model yang tersedia untuk seleksi.",
