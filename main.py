@@ -153,7 +153,7 @@ with st.sidebar:
     if model_provider == "Mistral API":
         st.markdown(
         """
-    1. Masukkan [Mistral API Key] Anda (https://console.mistral.ai/api-keys/) dan model bawah ini 🔑
+    1. Masukkan [Mistral API Key] Anda (https://console.mistral.ai/api-keys/) akses link tersbut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
@@ -185,6 +185,7 @@ with st.sidebar:
         "Pemodelan ancaman adalah aktivitas utama dalam siklus pengembangan perangkat lunak, tetapi sering diabaikan atau dijalankan dengan buruk.Risk Analyzer GPT bertujuan untuk membantu tim menghasilkan model ancaman yang lebih komprehensif dengan memanfaatkan (LLM) untuk menghasilkan daftar ancaman, kerangka serangan dan/atau mitigasi kontrol untuk aplikasi berdasarkan detail yang disediakan."
     )
     st.markdown("Created by [Yudha Elfransyah](https://id.linkedin.com/in/yudha-elfransyah-b6913737/).")
+    st.markdown("<meta name="dicoding:email" content="yudhae@gmail.com">")
     # Tambahkan tautan "Star on GitHub" ke bilah sisi
     st.sidebar.markdown(
         "⭐ Star on GitHub: [![Star on GitHub](https://img.shields.io/github/stars/fr13think/risk-analyzer-gpt?style=social)](https://github.com/fr13think/risk-analyzer-gpt)"
