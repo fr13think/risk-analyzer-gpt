@@ -11,11 +11,7 @@ from test_cases import create_test_cases_prompt, get_test_cases, get_test_cases_
 from dread import create_dread_assessment_prompt, get_dread_assessment, get_dread_assessment_azure, get_dread_assessment_google, get_dread_assessment_mistral, dread_json_to_markdown
 
 html_code = """
-<head>
-    <!-- Other tags -->
     <meta name="dicoding:email" content="yudhae@gmail.com">
-    <!-- Other tags -->
-</head>
 """
 
 # ------------------ Helper Functions ------------------ #
