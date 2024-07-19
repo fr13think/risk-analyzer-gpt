@@ -35,7 +35,7 @@ def get_test_cases(api_key, model_name, prompt):
     response = client.chat.completions.create(
         model = model_name,
         messages=[
-            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format."},
+            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format kedalam bahasa Indonesia."},
             {"role": "user", "content": prompt}
         ]
     )
@@ -56,7 +56,7 @@ def get_test_cases_azure(azure_api_endpoint, azure_api_key, azure_api_version, a
     response = client.chat.completions.create(
         model = azure_deployment_name,
         messages=[
-            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format."},
+            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format kedalam bahasa Indonesia."},
             {"role": "user", "content": prompt}
         ]
     )
@@ -71,7 +71,7 @@ def get_test_cases_google(google_api_key, google_model, prompt):
     genai.configure(api_key=google_api_key)
     model = genai.GenerativeModel(
         google_model,
-        system_instruction="Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format.",
+        system_instruction="Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format kedalam bahasa Indonesia.",
     )
     response = model.generate_content(prompt)
     
@@ -87,7 +87,7 @@ def get_test_cases_mistral(mistral_api_key, mistral_model, prompt):
     response = client.chat(
         model = mistral_model,
         messages=[
-            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format."},
+            {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format kedalam bahasa Indonesia."},
             {"role": "user", "content": prompt}
         ]
     )
