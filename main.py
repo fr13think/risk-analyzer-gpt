@@ -564,9 +564,9 @@ Postur keamanan aplikasi dan melindungi terhadap potensi serangan.
 # ------------------ DREAD Risk Assessment Generation ------------------ #
 with tab4:
     st.markdown("""
-DREAD adalah metode untuk mengevaluasi dan memprioritaskan risiko yang terkait dengan ancaman keamanan.Ini menilai ancaman berdasarkan ** d ** potensial, 
-** r ** Eproducibility, ** e ** xploitability, ** a ** pengguna yang disesuaikan, dan ** d ** iscoverability.Ini membantu dalam menentukan tingkat risiko keseluruhan dan 
-Berfokus pada ancaman paling kritis terlebih dahulu.Gunakan tab ini untuk melakukan penilaian risiko ketakutan untuk aplikasi / sistem Anda.
+DREAD adalah metode untuk mengevaluasi dan memprioritaskan risiko yang terkait dengan ancaman keamanan.Ini menilai ancaman berdasarkan ** Damage Potential** Potensi Kerusakan, 
+** Reproducibility ** seberapa mudah ancaman, ** Exploitability ** seberapa mudah bagi penyerang, ** Affected Users ** seberapa banyak pengguna yang akan terkena dampak, dan ** Discoverability ** seberapa mudah ancaman dapat dideteksi. DREAD membantu dalam menentukan tingkat risiko keseluruhan dan 
+Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan tab ini untuk melakukan penilaian risiko DREAD untuk aplikasi / sistem Anda.
 """)
     st.markdown("""---""")
     
