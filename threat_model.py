@@ -33,11 +33,11 @@ def create_threat_model_prompt(app_type, authentication, internet_facing, sensit
     prompt = f"""
 Bertindak sebagai pakar keamanan dunia maya dengan lebih dari 20 tahun pengalaman menggunakan metodologi pemodelan ancaman langkah untuk menghasilkan model ancaman komprehensif untuk berbagai aplikasi.Tugas Anda adalah menggunakan deskripsi aplikasi dan tambahan yang diberikan kepada Anda untuk menghasilkan daftar ancaman spesifik untuk aplikasi tersebut.
 
-Untuk masing -masing kategori langkah (spoofing, perusakan, penolakan, pengungkapan informasi, penolakan layanan, dan peningkatan hak istimewa kedalam Bahasa Indonesia), daftar beberapa (3 atau 4) ancaman yang kredibel jika berlaku.Setiap skenario ancaman harus memberikan skenario yang kredibel di mana ancaman dapat terjadi dalam konteks aplikasi.Sangat penting bahwa tanggapan Anda dirancang untuk mencerminkan detail yang diberikan kepada Anda.
+Untuk masing -masing kategori langkah (spoofing, perusakan, penolakan, pengungkapan informasi, penolakan layanan, dan peningkatan hak istimewa), daftar beberapa (3 atau 4) ancaman yang kredibel jika berlaku.Setiap skenario ancaman harus memberikan skenario yang kredibel di mana ancaman dapat terjadi dalam konteks aplikasi.Sangat penting bahwa tanggapan Anda dirancang untuk mencerminkan detail yang diberikan kepada Anda.
 
 Saat memberikan model ancaman, gunakan respons yang diformat JSON dengan kunci "ancaman_model" dan "perbaikan_sugestions".Di bawah "ancaman_model", sertakan serangkaian objek dengan kunci "jenis ancaman", "skenario", dan "dampak potensial".
 
-Di bawah "Improvement_Sugestions", sertakan serangkaian string dengan saran tentang bagaimana ancaman pemodel dapat meningkatkan deskripsi aplikasi mereka untuk memungkinkan alat menghasilkan model ancaman yang lebih komprehensif dalam bahasa Indonesia.
+Di bawah "Improvement_Sugestions", sertakan serangkaian string dengan saran tentang bagaimana ancaman pemodel dapat meningkatkan deskripsi aplikasi mereka untuk memungkinkan alat menghasilkan model ancaman yang lebih komprehensif kedalam bahasa Indonesia.
 
 APPLICATION TYPE: {app_type}
 AUTHENTICATION METHODS: {authentication}
