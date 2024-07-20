@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://risk-analyzer-gpt.streamlit.app)
+
 ## Risk Analyzer GPT
 
 Risk Analyzer GPT adalah alat pemodelan ancaman bertenaga AI yang memanfaatkan Large Language Model (LLM) untuk menghasilkan model ancaman dan pohon serangan untuk aplikasi yang diberikan berdasarkan metodologi dan langkah. Pengguna memberikan detail aplikasi, seperti jenis aplikasi, metode otentikasi, dan apakah aplikasi tersebut terhubung ke internet atau memproses data sensitif. Model kemudian menghasilkan outputnya berdasarkan informasi yang diberikan.
