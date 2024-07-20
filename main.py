@@ -51,12 +51,14 @@ def mermaid(code: str, height: int = 500) -> None:
 
 st.set_page_config(
     page_title="RISK ANALYZER GPT",
-    page_icon=":globe:",
+    page_icon=":fire:",
     layout="wide",
     initial_sidebar_state="expanded",
+    menu_items={
+        'name': "dicoding:email",
+        'content': "yudhae@gmail.com"
+    }
 )
-
-st.metadata(name="dicoding:email", content="yudhae@gmail.com")
 
 # ------------------ Sidebar ------------------ #
 
