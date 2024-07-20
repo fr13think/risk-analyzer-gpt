@@ -75,7 +75,7 @@ with st.sidebar:
     if model_provider == "OpenAI API":
         st.markdown(
         """
-    1. Masukkan [OpenAI API key](https://platform.openai.com/account/api-keys) akses link tersbut untuk memperoleh 🔑
+    1. Masukkan [OpenAI API key](https://platform.openai.com/account/api-keys) akses link tersebut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
@@ -98,8 +98,8 @@ with st.sidebar:
     if model_provider == "Azure OpenAI Service":
         st.markdown(
         """
-    1. Masukkan API Key Openai Azure Anda, Titik Akhir dan Nama Penempatan di bawah ini 🔑
-    2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
+    1. Masukkan API Key Openai Azure Anda, End Point dan Nama Deployment di bawah ini 🔑
+    2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap model serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
     )
@@ -131,7 +131,7 @@ with st.sidebar:
     if model_provider == "Google AI API":
         st.markdown(
         """
-    1. Masukkan [Google AI API Key Anda] (https://makersuite.google.com/app/apikey) akses link tersbut untuk memperoleh 🔑
+    1. Masukkan [Google AI API Key Anda] (https://makersuite.google.com/app/apikey) akses link tersebut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
@@ -153,7 +153,7 @@ with st.sidebar:
     if model_provider == "Mistral API":
         st.markdown(
         """
-    1. Masukkan [Mistral API Key] Anda (https://console.mistral.ai/api-keys/) akses link tersbut untuk memperoleh 🔑
+    1. Masukkan [Mistral API Key] Anda (https://console.mistral.ai/api-keys/) akses link tersebut untuk memperoleh 🔑
     2. Berikan rincian aplikasi yang ingin Anda hasilkan terhadap bentuk serangan  📝
     3. Menghasilkan daftar ancaman, menyerang pohon dan/atau mengurangi kontrol untuk aplikasi Anda 🚀
     """
@@ -203,7 +203,7 @@ with st.sidebar:
         "Di bawah ini adalah contoh deskripsi aplikasi yang dapat Anda gunakan untuk menguji langkah GPT:"
     )
     st.markdown(
-        "> Aplikasi web yang memungkinkan pengguna untuk membuat, menyimpan, dan berbagi catatan pribadi. Aplikasi ini dibangun menggunakan kerangka kerja React Frontend dan backend Node.js dengan database MongoDB. Pengguna dapat mendaftar untuk akun dan masuk menggunakan OAuth2 dengan Google atau Facebook. Catatan dienkripsi saat istirahat dan hanya dapat diakses oleh pengguna yang membuatnya. Aplikasi ini juga mendukung kolaborasi real-time pada catatan dengan pengguna lain."
+        "> Aplikasi web yang memungkinkan pengguna untuk membuat, menyimpan, dan berbagi catatan pribadi. Aplikasi ini dibangun menggunakan kerangka kerja React Frontend dan backend Node.js dengan database MongoDB. Pengguna dapat mendaftar untuk akun dan masuk menggunakan OAuth2 dengan Google atau Facebook. Catatan dienkripsi saat komunikasi data dan hanya dapat diakses oleh pengguna yang membuatnya. Aplikasi ini juga mendukung kolaborasi real-time catatan dengan pengguna lain."
     )
     st.markdown("""---""")
 
