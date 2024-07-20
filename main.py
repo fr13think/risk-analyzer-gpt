@@ -56,6 +56,8 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+st.metadata(name="dicoding:email", content="yudhae@gmail.com")
+
 # ------------------ Sidebar ------------------ #
 
 st.sidebar.image("Logoo.png")
