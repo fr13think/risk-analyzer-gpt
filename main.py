@@ -55,8 +55,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'name': "dicoding:email",
-        'content': "yudhae@gmail.com"
+        'About': "<meta name=\"dicoding:email\" content=\"yudhae@gmail.com\">"
     }
 )
 
