@@ -1,5 +1,6 @@
 [metadata]
-name = "<meta name="dicoding:email" content="yudhae@gmail.com">"
+name="dicoding:email"
+content="yudhae@gmail.com"
 
 [theme]
 primaryColor="#007AFF"
