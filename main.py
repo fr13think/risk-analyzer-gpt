@@ -64,7 +64,7 @@ st.set_page_config(
 st.sidebar.image("Logoo.png")
 
 # Tambahkan instruksi tentang cara menggunakan aplikasi ke bilah sisi
-st.sidebar.header("Cara Penggunaan Risk Analyzer GPT v.1.1.10")
+st.sidebar.header("Cara Penggunaan Risk Analyzer GPT v.1.1.12")
 
 with st.sidebar:
     # Tambahkan bidang input pemilihan model ke bilah samping

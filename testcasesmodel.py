@@ -82,9 +82,9 @@ def get_test_cases_google(google_api_key, google_model, prompt):
 
 # Fungsi untuk mendapatkan kasus tes dari respons model Mistral.
 def get_test_cases_mistral(mistral_api_key, mistral_model, prompt):
-    client = MistralClient(api_key=mistral_api_key)
+    client = Mistral(api_key=mistral_api_key)
 
-    response = client.chat(
+    response = client.chat.complete(
         model = mistral_model,
         messages=[
             {"role": "system", "content": "Anda adalah asisten yang membantu yang menyediakan kasus uji gherkin Markdown format kedalam bahasa Indonesia."},
