@@ -154,8 +154,12 @@ def get_dread_assessment_mistral(mistral_api_key, mistral_model, prompt):
         model = mistral_model,
         response_format={"type": "json_object"},
         messages=[
-            ChatMessage(role="user", content=prompt)
-        ]
+            # ChatCompletionResponse(role="user", content=prompt)
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
     )
 
     # Konversi string JSON di bagian 'konten' ke kamus Python

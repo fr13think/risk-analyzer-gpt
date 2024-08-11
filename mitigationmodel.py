@@ -1,5 +1,6 @@
 import google.generativeai as genai
-from mistralai.client import MistralClient
+# from mistralai.client import MistralClient
+from mistralai import Mistral, UserMessage
 from openai import OpenAI
 from openai import AzureOpenAI
 

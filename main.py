@@ -570,7 +570,7 @@ Postur keamanan aplikasi dan melindungi terhadap potensi serangan.
 # ------------------ DREAD Risk Assessment Generation ------------------ #
 with tab4:
     st.markdown("""
-DREAD adalah metode untuk mengevaluasi dan memprioritaskan risiko yang terkait dengan ancaman keamanan.Ini menilai ancaman berdasarkan ** Damage Potential** Potensi Kerusakan, 
+DREAD Risk Assessment Generation adalah metode untuk mengevaluasi dan memprioritaskan risiko yang terkait dengan ancaman keamanan.Ini menilai ancaman berdasarkan ** Damage Potential** Potensi Kerusakan, 
 ** Reproducibility ** seberapa mudah ancaman, ** Exploitability ** seberapa mudah bagi penyerang, ** Affected Users ** seberapa banyak pengguna yang akan terkena dampak, dan ** Discoverability ** seberapa mudah ancaman dapat dideteksi. DREAD membantu dalam menentukan tingkat risiko keseluruhan dan 
 Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan model ini untuk melakukan penilaian risiko DREAD untuk aplikasi / sistem Anda.
 """)
@@ -630,15 +630,15 @@ Berfokus pada ancaman paling kritis terlebih dahulu. Gunakan model ini untuk mel
 
 with tab5:
     st.markdown("""
-Model Kasus uji digunakan untuk memvalidasi keamanan aplikasi dan memastikan bahwa kerentanan potensial diidentifikasi dan 
-ditangani. Pada model ini memungkinkan Anda untuk menghasilkan kasus uji menggunakan sintaks Gherkin. Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
-Perilaku dalam teks biasa, menggunakan sintaks sederhana dari pernyataan yang diberikan-kemudian. Ini membantu dalam membuat tes yang jelas dan dapat dieksekusi 
+Model Uji Kasus / Test Case digunakan untuk memvalidasi keamanan aplikasi dan memastikan bahwa kerentanan potensial diidentifikasi dan 
+ditangani. Pada model ini memungkinkan Anda untuk menghasilkan uji kasus menggunakan sintaks Gherkin. Gherkin menyediakan cara terstruktur untuk menggambarkan aplikasi 
+Perilaku dalam teks biasa, menggunakan sintaks sederhana dari pernyataan yang diberikan dan kemudian. Ini membantu dalam membuat tes yang jelas dan dapat dieksekusi 
 skenario.
 """)
     st.markdown("""---""")
                 
     # CBuat tombol kirim untuk kasus uji
-    test_cases_submit_button = st.button(label="Menghasilkan kasus uji")
+    test_cases_submit_button = st.button(label="Menghasilkan Uji Kasus")
 
     # Jika tombol Generate Test Case diklik dan pengguna telah mengidentifikasi ancaman
     if test_cases_submit_button:
@@ -650,7 +650,7 @@ skenario.
             test_cases_prompt = create_test_cases_prompt(threats_markdown)
 
             # Tunjukkan pemintal saat menghasilkan test case
-            with st.spinner("Menghasilkan kasus uji ..."):
+            with st.spinner("Menghasilkan uji kasus ..."):
                 max_retries = 3
                 retry_count = 0
                 while retry_count < max_retries:

@@ -208,8 +208,12 @@ def get_threat_model_mistral(mistral_api_key, mistral_model, prompt):
         model = mistral_model,
         response_format={"type": "json_object"},
         messages=[
-            ChatMessage(role="user", content=prompt)
-        ]
+            # ChatCompletionResponse(role="user", content=prompt)
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
     )
 
     # Convert the JSON string in the 'content' field to a Python dictionary
