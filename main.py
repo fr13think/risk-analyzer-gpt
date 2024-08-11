@@ -72,7 +72,7 @@ with st.sidebar:
         "Pilih penyediaan model pilihan Anda (disarankan menggunakan Mistral API secara Gratis):",
         ["OpenAI API", "Azure OpenAI Service", "Google AI API", "Mistral API"],
         key="model_provider",
-        help="Pilih penyedia model yang ingin Anda gunakan.Ini akan menentukan model yang tersedia untuk seleksi.",
+        help="Aplikasi Risk Analyzer GPT v.1.1.12 sudah diuji coba atau dijalankan dengan baik menggunakan, Mistral AI atau Mistral API.",
     )
 
     if model_provider == "OpenAI API":
